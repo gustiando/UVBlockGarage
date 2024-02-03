@@ -9,9 +9,10 @@
             height: 100%;
             margin: 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            background-color: #f4f4f4; /* Light grey background */
+            justify-content: center;
+            background-color: #F7C22B; /* Updated to match the logo's yellow */
         }
         img {
             max-width: 100%;
@@ -22,11 +23,27 @@
             width: 50%; /* You can adjust this for your preferred size */
             max-width: 800px; /* Maximum size */
         }
+        .contact-info {
+            text-align: center; /* Center the contact info text */
+            margin-top: 20px;
+        }
+        a {
+            color: #000; /* Black color for the phone numbers */
+            text-decoration: none; /* No underline */
+            font-size: 1.2em; /* Larger font size for better visibility */
+        }
+        a:hover {
+            text-decoration: underline; /* Underline on hover for better UX */
+        }
     </style>
 </head>
 <body>
     <div class="responsive-img">
-        <img src="logo_low.jpg" alt="Descriptive Image Text">
+        <img src="logo_low.jpg" alt="UV Block Garage Logo">
+    </div>
+    <div class="contact-info">
+        <a href="tel:+111951932765">(11) 95193-2765</a><br>
+        <a href="tel:+111943438859">(11) 94343-8859</a>
     </div>
 </body>
 </html>
