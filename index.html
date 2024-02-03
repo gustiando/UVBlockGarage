@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Static Site</title>
+    <title>UV Block Garage</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); /* Importing a Google font that is somewhat similar */
+        
         body, html {
             height: 100%;
             margin: 0;
@@ -12,25 +14,23 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-color: #F7C22B; /* Updated to match the logo's yellow */
+            background-color: #ffffff; /* White background */
         }
         img {
-            max-width: 100%;
+            max-width: 80%; /* Adjusted for better layout */
             height: auto;
             border: 0;
-        }
-        .responsive-img {
-            width: 50%; /* You can adjust this for your preferred size */
-            max-width: 800px; /* Maximum size */
+            margin-bottom: 20px; /* Space between image and phone numbers */
         }
         .contact-info {
             text-align: center; /* Center the contact info text */
-            margin-top: 20px;
         }
         a {
             color: #000; /* Black color for the phone numbers */
             text-decoration: none; /* No underline */
-            font-size: 1.2em; /* Larger font size for better visibility */
+            font-family: 'Roboto', sans-serif; /* The imported font */
+            font-weight: 500; /* Medium weight to match the logo's boldness */
+            font-size: 1.5em; /* Larger font size for better visibility */
         }
         a:hover {
             text-decoration: underline; /* Underline on hover for better UX */
@@ -38,9 +38,7 @@
     </style>
 </head>
 <body>
-    <div class="responsive-img">
-        <img src="logo_low.jpg" alt="UV Block Garage Logo">
-    </div>
+    <img src="logo_low.jpg" alt="UV Block Garage Logo">
     <div class="contact-info">
         <a href="tel:+111951932765">(11) 95193-2765</a><br>
         <a href="tel:+111943438859">(11) 94343-8859</a>
