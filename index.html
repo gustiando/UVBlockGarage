@@ -1,50 +1,89 @@
 <!DOCTYPE html>
+<!-- saved from url=(0029)https://uvblockgarage.com.br/ -->
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UV Block Garage</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); /* Importing a Google font that is somewhat similar */
-        
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
         body, html {
-            height: 100%;
             margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: #ffffff; /* White background */
+            padding: 0;
+            height: 100%;
+            background-color: #ffffff;
         }
-        img {
-            max-width: 80%; /* Adjusted for better layout */
-            height: auto;
-            border: 0;
-            margin-bottom: 20px; /* Space between image and phone numbers */
+        header {
+            position: sticky;
+            top: 0;
+            background-color: #ffffff;
+            z-index: 1000;
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Adjust this to space-between */
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        header img {
+            height: 110px;
+            margin-right: 15px; /* Reduced margin to the right */
+            margin-left: 10px;
         }
         .contact-info {
-            text-align: center; /* Center the contact info text */
-            margin-bottom: 30px;
+            text-align: right;
+            margin-right: 5px;
+        }
+        .contact-info a {
+            color: #333;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 16px; /* Match engagement message size */
+            padding: 8px 12px; /* Adjusted padding */
+            border: 2px solid #333;
+            border-radius: 5px;
+            transition: color 0.3s;
+            display: inline-block; /* To respect padding and border */
+            margin: 3px 5px; /* Space between contact links */
+        }
+        .contact-info a:hover {
+            color: #000;
+            border-color: #000;
         }
         a {
-            color: #000; /* Black color for the phone numbers */
-            text-decoration: none; /* No underline */
-            font-family: 'Roboto', sans-serif; /* The imported font */
-            font-weight: 500; /* Medium weight to match the logo's boldness */
-            font-size: 1.5em; /* Larger font size for better visibility */
+            color: #000;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 16px; /* Smaller font size for the header */
         }
         a:hover {
-            text-decoration: underline; /* Underline on hover for better UX */
+            text-decoration: underline;
+        }
+        iframe {
+            height: calc(100vh - 70px); /* Adjusted height to make space for header */
+            width: 100vw;
+            border: none;
+            position: relative;
+            overflow: auto; /* Allows scrolling for the 'load more' button */
         }
     </style>
 </head>
 <body>
-    <img src="./logo.jpg" alt="UV Block Garage Logo">
-    <div class="contact-info">
-        <a href="tel:+111951932765">(11) 95193-2765</a><br>
-        <a href="tel:+111943438859">(11) 94343-8859</a>
-    </div>
+    <header>
+        <img src="./logo.jpg" alt="UV Block Garage Logo">
+        
+        <div class="contact-info">
+            <a href="tel:+111951932765">(11) 95193-2765</a><br>
+            <a href="tel:+111943438859">(11) 94343-8859</a>
+        </div>
+    </header>
 
-    <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/b530527b554c5a10801c04558488ed3c.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+    <!-- LightWidget WIDGET -->
+    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+    <iframe src="https://cdn.lightwidget.com/widgets/b530527b554c5a10801c04558488ed3c.html" scrolling="yes" allowtransparency="true" class="lightwidget-widget"></iframe>
 </body>
 </html>
